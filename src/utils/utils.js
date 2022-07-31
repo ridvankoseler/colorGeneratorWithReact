@@ -6,5 +6,4 @@ export const numToHex = (num) => {
 const rgbToHex = (r, g, b) => {
   return "#" + numToHex(r) + numToHex(g) + numToHex(b);
 };
-
 export default rgbToHex;

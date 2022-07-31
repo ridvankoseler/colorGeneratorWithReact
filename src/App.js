@@ -8,7 +8,7 @@ function App() {
   const [colorText, setColorText] = useState();
   const [error, setError] = useState(false);
   const [colorList, setColorList] = useState(new Values("#002288").all(10));
-  // console.log(colorList);
+  console.log(colorList);
   // console.log(colorText);
 
   const handleSubmit = (e) => {
@@ -20,12 +20,12 @@ function App() {
     } catch (error) {
       setError(true);
       alert("Please enter a valid value");
-      console.log(error);
+      // console.log(error);
     }
   };
   // console.log(colorList);
   return (
-    <div className='App'>
+    <div className='d-flex justify-content-center align-items-center mt-5 '>
       <div>
         <form onSubmit={handleSubmit} action=''>
           <label htmlFor=''>Color Generator</label>
@@ -44,8 +44,8 @@ function App() {
           <button type='submit'> Submit </button>
         </form>
         <main>
-          {colorList.map((item, index) => {
-            return <Colors item={item} index={index} />;
+          {colorList.map((item, index ) => {
+            return <Colors item={item} index={index} key={index} />;
           })}
         </main>
       </div>

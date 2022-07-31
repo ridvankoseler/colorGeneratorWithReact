@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import numToHex from "../utils/utils";
+import {numToHex} from "../utils/utils";
 
 const Colors = ({ index, item }) => {
   // console.log(colorList);
+  
   const { rgb, weight } = item;
-  // console.log(rgb,weight);
+  console.log(rgb,weight);
 
   let bcgColor = rgb.join(",");
   let hexColor = `#${numToHex(rgb[0]) + numToHex(rgb[1]) + numToHex(rgb[2])}`;
@@ -17,7 +18,7 @@ const Colors = ({ index, item }) => {
   }, [copy]);
 
   return (
-    <div
+    <div 
       className={` box p-2 border-0 col-sm-6 col-md-4 col-lg-2 fw-bold text-center fs-5 ${
         index > 10 && "text-light"
       }`}
@@ -28,7 +29,7 @@ const Colors = ({ index, item }) => {
       }}
     >
       <p>{weight}%</p>
-      <p>#{numToHex(rgb[0]) + numToHex(rgb[1]) + numToHex(rgb[2])}</p>
+      <p>#{hexColor}</p>
       {copy && <p className='fs-6 text-secondary'>COPIED TO CLIPBOARD</p>}
     </div>
   );
