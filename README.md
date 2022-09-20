@@ -10,4 +10,4 @@ https://color-generator-with-react-nine.vercel.app/
 👉 Form<br>
 👉 Javascript<br>
 
-![Animation LoremIpsum.gif](https://github.com/ridvankoseler/LoremIpsumWithReact/blob/c0b5523e84df16186c8ffeef39a5add619933421/Animation%20LoremIpsum.gif)
+![AnimationColor.gif](https://github.com/ridvankoseler/colorGeneratorWithReact/blob/bb9b78d904349826ac2a0a88d26cdcfb6f1101da/AnimationColor.gif)
