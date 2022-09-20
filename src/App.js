@@ -25,8 +25,8 @@ function App() {
   };
   // console.log(colorList);
   return (
-    <div className='d-flex justify-content-center align-items-center mt-5 '>
-      <div>
+    <div className=' justify-content-center align-items-center mt-3 p-2 '>
+      <div className="m-auto text-center">
         <form onSubmit={handleSubmit} action=''>
           <label htmlFor=''>Color Generator</label>
           <input
@@ -43,7 +43,7 @@ function App() {
           />
           <button type='submit'> Submit </button>
         </form>
-        <main>
+        <main className="mt-1 d-flex flex-wrap">
           {colorList.map((item, index ) => {
             return <Colors item={item} index={index} key={index} />;
           })}

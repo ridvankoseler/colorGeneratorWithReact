@@ -19,7 +19,7 @@ const Colors = ({ index, item }) => {
 
   return (
     <div 
-      className={` box p-2 border-0 col-sm-6 col-md-4 col-lg-2 fw-bold text-center fs-5 ${
+      className={` box  p-1 border border-1 border-dark col-6 col-sm-4 col-md-3 col-lg-2 fw-bold text-center fs-5 ${
         index > 10 && "text-light"
       }`}
       style={{ backgroundColor: `rgb(${bcgColor})` }}
@@ -30,7 +30,7 @@ const Colors = ({ index, item }) => {
     >
       <p>{weight}%</p>
       <p>#{hexColor}</p>
-      {copy && <p className='fs-6 text-secondary'>COPIED TO CLIPBOARD</p>}
+      {copy && <p className='fs-4 text-secondary'>COPIED TO CLIPBOARD</p>}
     </div>
   );
 };
