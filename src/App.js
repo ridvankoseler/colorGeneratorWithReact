@@ -41,7 +41,7 @@ function App() {
               setError(false);
             }}
           />
-          <button type='submit'> Submit </button>
+          <button className=" fw-bold mx-2 text-bg-primary text-light" type='submit'> Submit </button>
         </form>
         <main className="mt-1 d-flex flex-wrap">
           {colorList.map((item, index ) => {
